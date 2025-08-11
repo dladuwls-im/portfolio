@@ -1,1 +1,51 @@
-# portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background: #e7e7e7; display: flex; justify-content: center;}
+        form {width: 420px; background: white; padding: 20px; }
+        label { display: block; margin-top: 20px; color: red;}
+        textarea { width: 414px; height: 200px; }
+        input [type='text'] {width: 200px;}
+    </style>
+</head>
+
+
+<body>
+    <form action="/submit" method="POST">
+
+        <h2> 정보 과목 미니 퀴즈</h2>
+
+        <div class="question">
+            <label>Q1. HTML에서 재목을 표시하는 태그는 무엇일까요?<br> (예: h1)</label>
+            <input type="text" name="q1" placeholder="정답을 입력하세요" required>
+        </div>
+
+        <div class="question">
+            <label>Q2. 다음 중 프로그래밍 언어가 아닌 것은?</label>
+            <input type="radio" name="q3" value="python"> Python<br>
+            <input type="radio" name="q3" value="css"> CSS<br>
+            <input type="radio" name="q3" value="html"> HTML<br>
+            <input type="radio" name="q3" value="javascript"> JavaScript<br>
+        </div>
+
+        <div class="question">
+            <label>Q3. 다음 중 웹 브라우저에서 동작하는 언어를 모두 고르세요.</label>
+            <input type="checkbox" name="q3" value="html"> HTML<br>
+            <input type="checkbox" name="q3" value="css"> CSS<br>
+            <input type="checkbox" name="q3" value="python"> Python<br>
+            <input type="checkbox" name="q3" value="javascript"> JavaScript<br>
+        </div>
+
+        <div class="question">
+            <label>Q4. 앞으로 배우고 싶은 정보과목 관련 내용이나 만들고 싶은 프로젝트를 간단히 적어보세요.</label>
+            <textarea  name="q4" rows="3" placeholder="예: 나만의 웹페이지 만들기, 게임 개발 등"></textarea>
+        </div>
+        <button type="submit">제출하기</button>
+    </form>
+
+</body>
+</html>
